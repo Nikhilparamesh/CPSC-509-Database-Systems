@@ -1,0 +1,5 @@
+Position,
+Emp_id,Varchar (12)
+Position ,Varchar(30)  
+datefrom,Date 
+dateto,Date 

@@ -1,0 +1,5 @@
+Wages,
+Emp_id,Varchar (12)
+wage,Float  
+datefrom,Date 
+dateto,Date 

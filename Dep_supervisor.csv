@@ -1,0 +1,5 @@
+Dep_supervisor,
+dept_id,Varchar (10)
+Emp_id,Varchar (12)
+datefrom,Date 
+dateto,Date 

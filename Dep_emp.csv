@@ -1,0 +1,5 @@
+Dep_emp,
+emp_id,Varchar (10)
+dept_id,Varchar (12)
+datefrom,Date 
+dateto,Date 

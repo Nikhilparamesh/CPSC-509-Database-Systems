@@ -1,0 +1,6 @@
+Employee,
+Emp_id,Varchar (12)
+D.O.B,Date 
+F_name,Varchar(16)
+L_name,Varchar(16)
+dateOfhire,Date 

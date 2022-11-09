@@ -1,0 +1,4 @@
+Department,
+dept_id  ,Varchar (10)
+Dept_name ,Varchar(50)  
+Dept_rm_no,Varchar(5)  
