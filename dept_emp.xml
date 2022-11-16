@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Nov 16, 2022 at 01:58 AM
+- Server version: 10.4.21-MariaDB
+- PHP Version: 8.0.11
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="employee database" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="dept_emp">
+                CREATE TABLE `dept_emp` (
+                  `emp_id` varchar(12) NOT NULL,
+                  `dept_id` varchar(10) NOT NULL,
+                  `datefrom` date NOT NULL,
+                  `dateto` date NOT NULL,
+                  PRIMARY KEY (`emp_id`,`dept_id`),
+                  KEY `dept_id` (`dept_id`),
+                  CONSTRAINT `dept_emp_ibfk_1` FOREIGN KEY (`emp_id`) REFERENCES `employees` (`emp_id`) ON DELETE CASCADE,
+                  CONSTRAINT `dept_emp_ibfk_2` FOREIGN KEY (`dept_id`) REFERENCES `departments` (`dept_id`) ON DELETE CASCADE
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'employee database'
+    -->
+    <database name="employee database">
+        <!-- Table dept_emp -->
+        <table name="dept_emp">
+            <column name="emp_id">RF107</column>
+            <column name="dept_id">HR40</column>
+            <column name="datefrom">2002-11-05</column>
+            <column name="dateto">0000-00-00</column>
+        </table>
+        <table name="dept_emp">
+            <column name="emp_id">SA106</column>
+            <column name="dept_id">IT60</column>
+            <column name="datefrom">2015-11-11</column>
+            <column name="dateto">0000-00-00</column>
+        </table>
+        <table name="dept_emp">
+            <column name="emp_id">SC101</column>
+            <column name="dept_id">SS80</column>
+            <column name="datefrom">2020-08-11</column>
+            <column name="dateto">0000-00-00</column>
+        </table>
+        <table name="dept_emp">
+            <column name="emp_id">SC104</column>
+            <column name="dept_id">FI100</column>
+            <column name="datefrom">2019-11-20</column>
+            <column name="dateto">0000-00-00</column>
+        </table>
+    </database>
+</pma_xml_export>
